@@ -1,0 +1,7 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@headerFont        : 'Inconsolata', monospace;
+@pageFont          : 'Inconsolata', monospace;
+@googleFontFamily  : 'Inconsolata:400';
