@@ -1,0 +1,22 @@
+/*
+  blue = "#05386B";
+  green = "#5CDB95";
+  white = "#EDF5E1";
+  violet = "#379683";
+  olive = "#8EE4AF";
+  grey = "#E1E2DE";
+*/
+
+/* For active tab item */
+.ui.tabular.menu .active.item {
+  /* Green background  */
+  background: #5cdb95;
+  border: 1px solid #05386b;
+  border-bottom: none;
+  color: #05386b;
+}
+
+/* For active tab item body */
+.ui.attached.tabular.menu {
+  border-bottom: 1px solid #05386b;
+}
