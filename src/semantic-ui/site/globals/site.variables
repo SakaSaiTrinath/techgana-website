@@ -286,8 +286,8 @@
 @redTextColor    : @red;
 @orangeTextColor : @orange;
 @yellowTextColor : #B58105; // Yellow text is difficult to read
-@oliveTextColor  : #8ABC1E; // Olive is difficult to read
-@greenTextColor  : #1EBC30; // Green is difficult to read
+@oliveTextColor  : #8EE4AF; // Olive is difficult to read
+@greenTextColor  : #5CDB95; // Green is difficult to read
 @tealTextColor   : #10A3A3; // Teal text is difficult to read
 @blueTextColor   : @blue;
 @violetTextColor : @violet;
@@ -430,9 +430,9 @@
      Neutral Text
 --------------------*/
 
-@darkTextColor               : rgba(0, 0, 0, 0.85);
-@mutedTextColor              : rgba(0, 0, 0, 0.6);
-@lightTextColor              : rgba(0, 0, 0, 0.4);
+@darkTextColor               : darken(@blue, 5);
+@mutedTextColor              : lighten(@blue, 6)
+@lightTextColor              : lighten(@blue, 5);
 
 @unselectedTextColor         : rgba(0, 0, 0, 0.4);
 @hoveredTextColor            : rgba(0, 0, 0, 0.8);

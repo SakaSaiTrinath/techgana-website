@@ -18,7 +18,7 @@ function NavBar() {
   };
 
   return (
-    <Menu pointing inverted color='blue' stackable style={style} fixed='top'>
+    <Menu pointing inverted color='blue' style={style} fixed='top'>
       <Menu.Item name='Home' onClick={handleItemClick}>
         <Header as='h2' inverted>
           TechGana

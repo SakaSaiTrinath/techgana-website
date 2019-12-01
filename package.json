@@ -38,7 +38,8 @@
             ".jsx"
           ]
         }
-      ]
+      ],
+      "import/no-extraneous-dependencies": "off"
     }
   },
   "prettier": {
