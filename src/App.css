@@ -11,12 +11,22 @@
 .ui.tabular.menu .active.item {
   /* Green background  */
   background: #5cdb95;
-  border: 1px solid #05386b;
+  /*border: 1px solid #05386b;*/
   border-bottom: none;
   color: #05386b;
 }
 
 /* For active tab item body */
 .ui.attached.tabular.menu {
-  border-bottom: 1px solid #05386b;
+  /*border-bottom: 1px solid #05386b;*/
+}
+
+.ui.inverted.segment {
+  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12),
+    0px 2px 10px 0px rgba(34, 36, 38, 0.15);
+}
+
+.ui.segment[class*="bottom attached"] {
+  box-shadow: 0px 0px 4px 0px rgba(34, 36, 38, 0.12),
+    0px 0px 10px 0px rgba(34, 36, 38, 0.15);
 }

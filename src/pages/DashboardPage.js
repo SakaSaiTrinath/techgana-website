@@ -1,6 +1,6 @@
 import React from "react";
 import {Grid, Header, Tab, Menu, Label, Button, Icon} from "semantic-ui-react";
-import NavBar from "../components/NavBar";
+import {Link} from "react-router-dom";
 import ProjectsTab from "../components/ProjectsTab";
 
 function DashboardPage() {
@@ -30,6 +30,8 @@ function DashboardPage() {
       meta: "Reactjs, Redux",
       link: true,
       raised: true,
+      as: Link,
+      to: "/projects",
       extra,
     },
     {
@@ -38,6 +40,8 @@ function DashboardPage() {
       meta: "Reactjs, Nodejs, Redux, MongoDB, Semantic UI",
       link: true,
       raised: true,
+      as: Link,
+      to: "/projects",
       extra,
     },
     {
@@ -46,6 +50,8 @@ function DashboardPage() {
       meta: "PHP, .Net",
       link: true,
       raised: true,
+      as: Link,
+      to: "/projects",
       extra,
     },
     {
@@ -54,6 +60,8 @@ function DashboardPage() {
       meta: "Reactjs, GraphQL",
       link: true,
       raised: true,
+      as: Link,
+      to: "/projects",
       extra,
     },
   ];
@@ -64,6 +72,9 @@ function DashboardPage() {
       description: "This makes swagger writing files easier.",
       meta: "Reactjs, Redux",
       link: true,
+      raised: true,
+      as: Link,
+      to: "/projects",
       extra,
     },
     {
@@ -71,6 +82,9 @@ function DashboardPage() {
       description: "Website for techgana community.",
       meta: "Reactjs, Nodejs, Redux, MongoDB, Semantic UI",
       link: true,
+      raised: true,
+      to: "/projects",
+      as: Link,
       extra,
     },
   ];
@@ -97,21 +111,18 @@ function DashboardPage() {
   ];
 
   return (
-    <>
-      <NavBar />
-      <Grid style={gridStyle}>
-        <Grid.Row textAlign='center'>
-          <Grid.Column>
-            <Header as='h2' content='Dashboard' color='blue' />
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row textAlign='center'>
-          <Grid.Column>
-            <Tab panes={panes} />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </>
+    <Grid style={gridStyle}>
+      <Grid.Row textAlign='center'>
+        <Grid.Column>
+          <Header as='h2' content='Dashboard' color='blue' />
+        </Grid.Column>
+      </Grid.Row>
+      <Grid.Row textAlign='center'>
+        <Grid.Column>
+          <Tab panes={panes} />
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
   );
 }
 
