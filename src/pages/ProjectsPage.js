@@ -2,6 +2,7 @@ import React from "react";
 import {Grid, Header, Button, Icon} from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import ProjectsTab from "../components/ProjectsTab";
+import NavBar from "../components/NavBar";
 
 function ProjectsPage() {
   const gridStyle = {
@@ -51,26 +52,30 @@ function ProjectsPage() {
   ];
 
   return (
-    <Grid style={gridStyle}>
-      <Grid.Row textAlign='center'>
-        <Grid.Column>
-          <Header as='h2' content='Projects' color='blue' />
-          <Button
-            style={buttonStyle}
-            floated='right'
-            content='Propose Project'
-            icon='add'
-            color='blue'
-            size='small'
-          />
-        </Grid.Column>
-      </Grid.Row>
-      <Grid.Row textAlign='center'>
-        <Grid.Column>
-          <ProjectsTab items={pjItems} />
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
+    <>
+
+      <NavBar />
+      <Grid style={gridStyle}>
+        <Grid.Row textAlign='center'>
+          <Grid.Column>
+            <Header as='h2' content='Projects' color='blue' />
+            <Button
+              style={buttonStyle}
+              floated='right'
+              content='Propose Project'
+              icon='add'
+              color='blue'
+              size='small'
+            />
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row textAlign='center'>
+          <Grid.Column>
+            <ProjectsTab items={pjItems} />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </>
   );
 }
 

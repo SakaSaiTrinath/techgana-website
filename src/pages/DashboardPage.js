@@ -2,6 +2,7 @@ import React from "react";
 import {Grid, Header, Tab, Menu, Label, Button, Icon} from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import ProjectsTab from "../components/ProjectsTab";
+import NavBar from "../components/NavBar";
 
 function DashboardPage() {
   const gridStyle = {
@@ -11,16 +12,18 @@ function DashboardPage() {
   };
 
   const extra = (
-    <div className='ui two buttons'>
-      <Button basic color='green'>
-        <Icon name='thumbs up' />
-        20
-      </Button>
-      <Button basic color='violet'>
-        <Icon name='thumbs down' />
-        40
-      </Button>
-    </div>
+    <>
+      <div className='ui two buttons'>
+        <Button basic color='green'>
+          <Icon name='thumbs up' />
+          20
+        </Button>
+        <Button basic color='violet'>
+          <Icon name='thumbs down' />
+          40
+        </Button>
+      </div>
+    </>
   );
 
   const cpItems = [
@@ -111,18 +114,21 @@ function DashboardPage() {
   ];
 
   return (
-    <Grid style={gridStyle}>
-      <Grid.Row textAlign='center'>
-        <Grid.Column>
-          <Header as='h2' content='Dashboard' color='blue' />
-        </Grid.Column>
-      </Grid.Row>
-      <Grid.Row textAlign='center'>
-        <Grid.Column>
-          <Tab panes={panes} />
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
+    <>
+      <NavBar />
+      <Grid style={gridStyle}>
+        <Grid.Row textAlign='center'>
+          <Grid.Column>
+            <Header as='h2' content='Dashboard' color='blue' />
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row textAlign='center'>
+          <Grid.Column>
+            <Tab panes={panes} />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </>
   );
 }
 
