@@ -23,7 +23,8 @@
       "react-app",
       "airbnb",
       "airbnb/hooks",
-      "prettier"
+      "prettier",
+      "prettier/react"
     ],
     "parserOptions": {
       "ecmaFeatures": {

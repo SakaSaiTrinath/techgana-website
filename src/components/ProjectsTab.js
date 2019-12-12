@@ -7,6 +7,7 @@ import ProjectCardGroup from "../containers/ProjectCardGroup";
 function ProjectsTab({items}) {
   const tabStyle = {
     background: green,
+    // backgroundImage: `repeating-linear-gradient(${green}, ${olive})`,
     // borderColor: blue,
     padding: "2rem",
   };

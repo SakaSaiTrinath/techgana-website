@@ -11,12 +11,12 @@ function DashboardPage() {
   };
 
   const extra = (
-    <div className='ui two buttons'>
-      <Button basic color='green'>
+    <div className='ui two buttons' size='mini'>
+      <Button color='blue'>
         <Icon name='thumbs up' />
         20
       </Button>
-      <Button basic color='violet'>
+      <Button color='violet'>
         <Icon name='thumbs down' />
         40
       </Button>
@@ -31,7 +31,7 @@ function DashboardPage() {
       link: true,
       raised: true,
       as: Link,
-      to: "/projects",
+      to: "/projects/project-id",
       extra,
     },
     {
@@ -41,7 +41,7 @@ function DashboardPage() {
       link: true,
       raised: true,
       as: Link,
-      to: "/projects",
+      to: "/projects/project-id",
       extra,
     },
     {
@@ -51,7 +51,7 @@ function DashboardPage() {
       link: true,
       raised: true,
       as: Link,
-      to: "/projects",
+      to: "/projects/project-id",
       extra,
     },
     {
@@ -61,7 +61,7 @@ function DashboardPage() {
       link: true,
       raised: true,
       as: Link,
-      to: "/projects",
+      to: "/projects/project-id",
       extra,
     },
   ];
@@ -74,7 +74,7 @@ function DashboardPage() {
       link: true,
       raised: true,
       as: Link,
-      to: "/projects",
+      to: "/projects/project-id",
       extra,
     },
     {
@@ -83,7 +83,7 @@ function DashboardPage() {
       meta: "Reactjs, Nodejs, Redux, MongoDB, Semantic UI",
       link: true,
       raised: true,
-      to: "/projects",
+      to: "/projects/project-id",
       as: Link,
       extra,
     },
