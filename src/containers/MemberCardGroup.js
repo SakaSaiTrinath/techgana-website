@@ -2,11 +2,17 @@ import React from "react";
 import {Card, Image, Label, Popup} from "semantic-ui-react";
 import PropTypes from "prop-types";
 
-function MembersCardGroup({items}) {
+function MemberCardGroup({items}) {
   return (
     <Card.Group doubling itemsPerRow={4} centered={false} stackable>
       {items.map(item => (
-        <Card key={item.header} link={item.link} raised={item.raised}>
+        <Card
+          key={item.header}
+          link={item.link}
+          raised={item.raised}
+          as={item.as}
+          to={item.to}
+        >
           {item.is_author && (
             <Popup
               content='Project Author'
@@ -25,8 +31,8 @@ function MembersCardGroup({items}) {
   );
 }
 
-MembersCardGroup.propTypes = {
+MemberCardGroup.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-export default MembersCardGroup;
+export default MemberCardGroup;

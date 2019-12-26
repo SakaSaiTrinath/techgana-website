@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Tab, Button, Grid, Modal, Form, Header, Icon} from "semantic-ui-react";
 import PropTypes from "prop-types";
 import {green} from "../constants";
-import MembersCardGroup from "../containers/MembersCardGroup";
+import MemberCardGroup from "../containers/MemberCardGroup";
 
 function MembersTab({items, type}) {
   const [modalOpen, setModalOpen] = useState(false);
@@ -54,7 +54,7 @@ function MembersTab({items, type}) {
         )}
         <Grid.Row>
           <Grid.Column>
-            <MembersCardGroup items={items} />
+            <MemberCardGroup items={items} />
           </Grid.Column>
         </Grid.Row>
       </Grid>
